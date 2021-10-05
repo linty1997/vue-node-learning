@@ -13,11 +13,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.0.0-alpha.8",
-    "mongoose": "^6.0.8"
+    "inflection": "^1.13.1",
+    "mongoose": "^6.0.8",
+    "multer": "^1.4.3"
   },
-  "eslintConfig": { 
-    "rules": { 
-        "no-unused-vars": "off" 
+  "eslintConfig": {
+    "rules": {
+      "no-unused-vars": "off"
     }
   }
 }

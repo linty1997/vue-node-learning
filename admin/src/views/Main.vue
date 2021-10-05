@@ -8,8 +8,18 @@
           </template>
           <el-menu-item-group>
             <template #title>分類</template>
-            <el-menu-item index="/categories/create">新建分類</el-menu-item>
+            <el-menu-item index="/categories/create">新增分類</el-menu-item>
             <el-menu-item index="/categories/list">分類列表</el-menu-item>
+          </el-menu-item-group>
+          <el-menu-item-group>
+            <template #title>咖啡</template>
+            <el-menu-item index="/coffees/create">新增咖啡</el-menu-item>
+            <el-menu-item index="/coffees/list">咖啡列表</el-menu-item>
+          </el-menu-item-group>
+          <el-menu-item-group>
+            <template #title>產地</template>
+            <el-menu-item index="/origins/create">新增產地</el-menu-item>
+            <el-menu-item index="/origins/list">產地列表</el-menu-item>
           </el-menu-item-group>
         </el-submenu>
       </el-menu>
@@ -32,13 +42,7 @@
 
       <el-main>
         <router-view></router-view>
-        <!-- <el-table :data="tableData">
-          <el-table-column prop="date" label="Date" width="140">
-          </el-table-column>
-          <el-table-column prop="name" label="Name" width="120">
-          </el-table-column>
-          <el-table-column prop="address" label="Address"> </el-table-column>
-        </el-table> -->
+        
       </el-main>
     </el-container>
   </el-container>
