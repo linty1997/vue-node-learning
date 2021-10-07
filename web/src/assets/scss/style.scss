@@ -13,7 +13,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2em;
-    background: rgb(255, 255, 255);
+    background: rgb(184, 183, 183);
     -webkit-font-smoothing: antialiased;
 }
 a {
@@ -124,11 +124,22 @@ a {
 
 //nav
 .nav {
+    display: flex;
     .nav-item {
         border-bottom: 3px solid transparent;
         padding-bottom: 0.2rem;
+        
         &.active {
-            border-bottom: 3px solid #fff;
+            color: map-get($colors, 'primary' );
+            border-bottom-color: map-get($colors, 'primary' );
+        }
+    }
+    &.nav-inverse {
+        .nav-item {
+            color: map-get($colors, 'white' );
+            &.active {
+                border-bottom-color: map-get($colors, 'white' );
+            }
         }
     }
     

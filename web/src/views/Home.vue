@@ -21,12 +21,47 @@
         </div>
       </div>
       <div class="bg-light py-2 fs-sm d-flex ai-center jc-center">
-          <i class="sprite sprite-arrow mr-1"></i>
+          <i class="mr-1 fas fa-angle-double-up"></i> <!-- sprite sprite-arrow -->
           <span>摺疊</span>
       </div>
     </div>
-    <!-- end of sprite -->
     
+    <!-- end of nav icons -->
+
+    <m-card icon="neos" title="新聞資訊">
+      <div class="nav jc-between">
+        <div class="nav-item active">
+          <div class="nav-link">熱門</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-link">新聞</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-link">活動</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-link">公告</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-link">賽事</div>
+        </div>
+      </div>
+      <div class="pt-3">
+        <swiper>
+          <swiper-slide v-for="m in 5" :key="m">
+            <div class="py-2" v-for="n in 5" :key="n">
+              <span>[新聞]</span>
+              <span>|</span>
+              <span>這就是標題沒錯就只是個標題不要懷疑啦</span>
+              <span>10/01</span>
+            </div>
+          </swiper-slide>
+        </swiper>
+      </div>
+    </m-card>
+
+    
+
 
   </div>
 </template>
